@@ -26,6 +26,7 @@ public class Clovek {
     public void setMeno(String meno) {
         this.meno  = meno;
     }
+
     ////////////////////////////////////ID/////////////////////////////////////
     public int getId() {
         return id;
@@ -34,4 +35,26 @@ public class Clovek {
     public void setId(int id) {
         this.id = id;
     }
+
+    ////////////////////////////////////IF/////////////////////////////////////
+    public void porovnajVek(){
+        if(this.vek < 40){
+            System.out.println("Si mladý");
+        }
+        else {
+            System.out.println("Si starý");
+        }
+    }
+
+    ////////////////////////////////////FOR/////////////////////////////////////
+    public void vypisCisla(int max){
+        for(int i = 0; i<max; i++){
+            if(i == 5){
+                break;
+            }
+            System.out.println(i);
+        }
+    }
+
+    ////////////////////////////////////FOR/////////////////////////////////////
 }
