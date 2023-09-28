@@ -14,6 +14,7 @@ public class main {
         c2.porovnajVek();
 
         c1.vypisCisla(10);
+        c1.vypisCisla1(10);
     }
 
 }

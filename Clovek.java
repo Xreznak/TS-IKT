@@ -49,12 +49,20 @@ public class Clovek {
     ////////////////////////////////////FOR/////////////////////////////////////
     public void vypisCisla(int max){
         for(int i = 0; i<max; i++){
-            if(i == 5){
+
+            if(i == 8){
                 break;
             }
             System.out.println(i);
         }
     }
 
-    ////////////////////////////////////FOR/////////////////////////////////////
+    ////////////////////////////////////WHILE/////////////////////////////////////
+    public void vypisCisla1(int max) {
+        int i = 0;
+        while (i < 10) {
+            System.out.println(i);
+            i++;
+        }
+    }
 }
