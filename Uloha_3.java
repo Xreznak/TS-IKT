@@ -14,30 +14,33 @@ public class Uloha_3
         int scitanie = parameter_1 + parameter_2;
         int odcitanie = parameter_1 - parameter_2;
         int nasobenie = parameter_1 * parameter_2;
-        int delenie = parameter_1 / parameter_2;
-        System.out.print(parameter_1 + ", " + parameter_2 + " => "+ scitanie + ", " + odcitanie + ", " + nasobenie+ ", " + delenie);
+        float delenie = (float) parameter_1 / parameter_2;
+        System.out.print(parameter_1 + ", " + parameter_2 + " => (+,-,*,/) => "+ scitanie + ", " + odcitanie + ", " + nasobenie+ ", " + delenie);
+        System.out.println();
     }
     public static void calculator_b()
     {
-
-        Scanner vstup = new Scanner(System.in);
         System.out.println("calculator_b");
+        Scanner vstup = new Scanner(System.in);
+
+        System.out.println("Zadaj dve čísla: ");
         int parameter_1 = vstup.nextInt();
         int parameter_2 = vstup.nextInt();
 
         int scitanie = parameter_1 + parameter_2;
         int odcitanie = parameter_1 - parameter_2;
         int nasobenie = parameter_1 * parameter_2;
-        int delenie;
+        float delenie;
         if(parameter_2 == 0 || parameter_1 == 0)
         {
             System.out.println("Cislom 0 sa neda delit");
         }
         else
         {
-            delenie = parameter_1 / parameter_2;
-            System.out.print(parameter_1 + ", " + parameter_2 + " => "+ scitanie + ", " + odcitanie + ", " + nasobenie+ ", " + delenie);
+            delenie = (float) parameter_1 / parameter_2;
+            System.out.print(parameter_1 + ", " + parameter_2 + " => (+,-,*,/) => "+ scitanie + ", " + odcitanie + ", " + nasobenie+ ", " + delenie);
         }
+        System.out.println();
     }
 
     public static void calculator_c() throws IOException
@@ -74,10 +77,11 @@ public class Uloha_3
             }
             else
             {
-                int delenie = parameter_1 / parameter_2;
+                float delenie = (float) parameter_1 / parameter_2;
                 System.out.println(delenie);
             }
         }
         else System.out.println("Zadal si zlý vstup :)");
+        System.out.println();
     }
 }
