@@ -15,6 +15,6 @@ public class Uloha_1 {
         {
             vysledok = vysledok * i;
         }
-        System.out.println("Factorial " + fac_cislo + " = " + vysledok);
+        System.out.println("Factorial " + fac_cislo + " => " + vysledok);
     }
 }
