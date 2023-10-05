@@ -1,20 +1,45 @@
 public class main {
-    public static void main (String[] args){
-        Clovek c1 = new Clovek("Fero", 20, 10);
-        Clovek c2 = new Clovek("Jano", 50, 13);
-        System.out.println(c1.getVek());
-        c1.setVek(30);
-        System.out.println(c1.getVek());
+        public static void main(String[] args) {
+                int cislo = 5;
+                System.out.println("Prvocislo");
+                if (cislo % 2 != 0) {
+                        System.out.println(cislo + " => True");
+                }
+                else System.out.println(cislo +" =>False");
+////////////////////////////////////////////////////////////////////////////////////////////
+                System.out.println();
+                System.out.println("Factorial");
+                int fac_cislo = 5;
+                        int j = 1;
+                        for(int i = 1; i<=fac_cislo;i++){
+                                j = j*i;
+                        }
+                System.out.println("Factorial " + fac_cislo + " = " + j);
+////////////////////////////////////////////////////////////////////////////////////////////
+                System.out.println();
+                System.out.println("SumALL");
+                int sum = 0;
+                int sum_cislo = 5;
+                for(int i = 1; i<=fac_cislo;i++){
+                        j = j*i;
+                }
+                System.out.println("Factorial " + fac_cislo + " = " + j);
+////////////////////////////////////////////////////////////////////////////////////////////
+                int predpredminula = 0;
+                int predminula = 1;
+                int minula = 1;
+                int max = 6;
 
-        System.out.println(c1.getMeno());
-        c1.setMeno("Adam");
-        System.out.println(c1.getMeno());
+                System.out.println();
+                System.out.println("Fibunaciho postupnost");
+                System.out.print(max + " => ");
+                for(int i = 0; i<max; i++) {
+                        System.out.print(predpredminula + ", ");
+                        int sucasna = predpredminula + predminula + minula;
+                        predpredminula = predminula;
+                        predminula = minula;
+                        minula = sucasna;
+                }
 
-        c1.porovnajVek();
-        c2.porovnajVek();
-
-        c1.vypisCisla(10);
-        c1.vypisCisla1(10);
-    }
-
+        }
 }
