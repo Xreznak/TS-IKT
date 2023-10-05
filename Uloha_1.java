@@ -7,12 +7,14 @@ public class Uloha_1 {
         else System.out.println(cislo +" => False");
     }
 
-    public static void faktorial(int fac_cislo) {
+    public static void faktorial(int fac_cislo)
+    {
         System.out.println("Factorial");
-        int j = fac_cislo;
-        for(int i = 1; i<=fac_cislo;i++){
-            j = j*i;
+        int vysledok = 1;
+        for(int i = 1; i <= fac_cislo;i++)
+        {
+            vysledok = vysledok * i;
         }
-        System.out.println("Factorial " + fac_cislo + " = " + j);
+        System.out.println("Factorial " + fac_cislo + " = " + vysledok);
     }
 }
