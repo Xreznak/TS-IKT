@@ -39,7 +39,7 @@ public class Zamestnanec {
         return plat;
     }
 
-    public void setPlat(int id) {
+    public void setPlat(int plat) {
         this.plat = plat;
     }
 
