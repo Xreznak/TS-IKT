@@ -3,6 +3,6 @@ public class Cat extends Animal {
         super(name, age);
     }
     public void makeSound() {
-        System.out.println("mnau");
+        System.out.println("\tZvuk: MNAU MNAU MNAU");
     }
 }

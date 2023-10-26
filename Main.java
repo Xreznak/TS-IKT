@@ -1,20 +1,24 @@
 public class Main {
     public static void main(String[] args) {
-        Dog dog = new Dog("Miki", 6);
-        Cat cat = new Cat("Jahoda", 2);
+        Dog dog = new Dog("Dunčo", 3);
+        Cat cat = new Cat("Ares", 7);
 
-        System.out.println("Dog:");
+        System.out.println();
+        System.out.println("Pes:");
         dog.displayInfo();
         dog.makeSound();
 
-        System.out.println("\nCat:");
+        System.out.println();
+        System.out.println("Macka:");
         cat.displayInfo();
         cat.makeSound();
 
-        Rectangle rectangle = new Rectangle("\nMoj rectangel", 5,8);
+        System.out.println();
+        Rectangle rectangle = new Rectangle("Moj obdlznik", 3,3);
         rectangle.displayInfo();
 
-        Circle circle = new Circle("\nMoj circel", 3);
+        System.out.println();
+        Circle circle = new Circle("Moj kruh", 6);
         circle.displayInfo();
     }
 }
