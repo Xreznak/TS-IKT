@@ -1,10 +1,9 @@
 public class knihy
 {
-    //All final attributes
-    private final String nazov_knihy; // required
-    private final int pocet_stran; // optional
-    private final String autor; // optional
-    private final double cena; // optional
+    private final String nazov_knihy;
+    private final int pocet_stran;
+    private final String autor;
+    private final double cena;
 
     private knihy(KnihaBuilder builder)
     {
@@ -14,6 +13,7 @@ public class knihy
         this.cena = builder.cena;
     }
 
+    @Override
     public String toString()
     {
         return "Nazov knihy: "+this.nazov_knihy+", Autor: "+this.autor+", Cena: "+this.cena+" €, Počet strán: "+this.pocet_stran;
@@ -30,7 +30,6 @@ public class knihy
         {
             this.nazov_knihy = nazov_knihy;
         }
-
         public KnihaBuilder autor(String autor)
         {
             this.autor = autor;
