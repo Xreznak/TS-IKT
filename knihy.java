@@ -13,12 +13,13 @@ public class knihy
         this.cena = builder.cena;
     }
 
-    @Override
+    //zobrazenie vypisu
     public String toString()
     {
         return "Nazov knihy: "+this.nazov_knihy+", Autor: "+this.autor+", Cena: "+this.cena+" €, Počet strán: "+this.pocet_stran;
     }
 
+    //implementovanie rozhrania bulder
     public static class KnihaBuilder
     {
         private final String nazov_knihy;
@@ -50,23 +51,25 @@ public class knihy
             return new knihy(this);
         }
     }
+
+    // zobrazenie a naplnenie pomocou builder
     public static void main(String[] args)
     {
-        knihy kniha_1 = new knihy.KnihaBuilder("Lokesh")
-                .autor("adam")
-                .cena(12.5)
-                .pocet_stran(30)
+        knihy kniha_1 = new knihy.KnihaBuilder("Harry Potter and the Philosopher’s Stone")
+                .autor("J. K. Rowling")
+                .cena(39.95)
+                .pocet_stran(368)
                 .build();
         System.out.println(kniha_1);
 
-        knihy kniha_2 = new knihy.KnihaBuilder("Jack")
-                .autor("jozef")
-                // cena
-                .pocet_stran(40)
+        knihy kniha_2 = new knihy.KnihaBuilder("Metro 2033")
+                .autor("Dmitry Glukhovsky")
+                //No cena
+                .pocet_stran(352)
                 .build();
         System.out.println(kniha_2);
 
-        knihy kniha_3 = new knihy.KnihaBuilder("Super")
+        knihy kniha_3 = new knihy.KnihaBuilder("Základy moderní informatiky")
                 //No autor
                 //No cena
                 //no pocet stran
